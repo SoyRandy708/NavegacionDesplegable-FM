@@ -1,0 +1,28 @@
+.icono-menu {
+    display: none;
+}
+.nav-desktop {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+header nav {
+    display: flex;
+}
+
+section {
+    padding: 20px 70px;
+    grid-template-columns: repeat(2, 1fr);
+}
+section picture img {
+    width: 100%;
+}
+section .informacion {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.informacion {
+    text-align: start;
+}
+.informacion .titulo {
+    font-size: 5rem;
+}

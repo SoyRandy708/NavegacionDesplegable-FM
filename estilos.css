@@ -1,3 +1,4 @@
+/* GENERAL */
 :root {
     --almost-white: hsl(0, 0%, 98%);
     --medium-gray: hsl(0, 0%, 41%);
@@ -15,17 +16,41 @@ html {
 body {
     font-size: 1.4rem;
 }
-header ul {
-    display: flex;
-    width: 100%;
-    height: 10vh;
-    justify-content: space-between;
-    align-items: center;
+ul {
     list-style: none;
 }
-header ul li img {
+.inactive {
+    display: none;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 10vh;
+}
+header nav {
+    height: 100%;
+}
+header nav ul:nth-child() {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li img {
     margin: 10px
 }
+.logo {
+    width: 70px;
+}
+.icono-menu {
+    width: 30px;
+}
+.nav-desktop {
+    display: none;
+}
+
+/* MAIN */
 section {
     display: grid;
     grid-template-rows: repeat(2, auto);
@@ -54,4 +79,38 @@ section img {
     background-color: var(--almost-black);
     border-radius: 10px;
     border: none;
+}
+.marcas {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.informacion ul li img {
+    width: 60px;
+}
+.informacion .audio-phile {
+    width: 40px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--light-gray);
+    border-top: 1px solid var(--medium-gray);
+}
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    height: 100%;      
+    font-size: 1.6rem;   
+}
+footer ul li a{
+    text-decoration: none;
+}
+footer ul li img {
+    width: 30px;
 }
