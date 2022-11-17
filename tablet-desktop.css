@@ -61,6 +61,42 @@ header nav {
     border: 2px solid var(--almost-black);
     cursor: pointer;
 }
+.nav-izquierdo li:nth-child(1):hover #nav-desktop-caracteristicas{
+    display: inline-block;
+}
+#nav-desktop-caracteristicas {
+    position: absolute;
+    top: 63px;
+    left: 150px;
+    z-index: 2;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0 0 10px var(--almost-black);
+}
+#nav-desktop-caracteristicas li {
+    margin: 10px;
+}
+#nav-desktop-caracteristicas span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+}
+#nav-desktop-caracteristicas li:nth-child(1) span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099889/FrontendMentor/NavegacionDesplegable-FM/icon-todo_rt3d2q.svg");
+}
+#nav-desktop-caracteristicas li:nth-child(2) span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099887/FrontendMentor/NavegacionDesplegable-FM/icon-calendar_izcgi4.svg");
+}
+#nav-desktop-caracteristicas li:nth-child(3) span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099889/FrontendMentor/NavegacionDesplegable-FM/icon-reminders_jaxqbl.svg")
+}
+#nav-desktop-caracteristicas li:nth-child(4) span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099889/FrontendMentor/NavegacionDesplegable-FM/icon-planning_exltb2.svg");
+}
+
 
 /* MAIN */
 section {
