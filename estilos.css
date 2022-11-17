@@ -37,6 +37,7 @@ header {
     height: 10vh;
 }
 header nav {
+    position: relative;
     height: 100%;
     margin: 0 20px;
 }
@@ -54,6 +55,73 @@ header nav ul:nth-child(1) {
 }
 .nav-desktop {
     display: none;
+}
+#nav-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: var(--almost-white);
+    animation: desplazamiento 500ms ease-out ;
+}
+@keyframes desplazamiento {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0)
+    }
+}
+@keyframes desplazamientoCerrar {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(100%)
+    }
+}
+#nav-mobile div {
+    display: flex;
+    flex-direction: column;
+}
+#nav-mobile li {
+    color: var(--medium-gray);
+    margin: 20px;
+}
+#nav-mobile li:active {
+    color: var(--almost-black);
+}
+#nav-mobile li span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099887/FrontendMentor/NavegacionDesplegable-FM/icon-arrow-down_nxnegu.svg");
+    background-repeat: no-repeat;
+}
+#nav-mobile li:active span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099887/FrontendMentor/NavegacionDesplegable-FM/icon-arrow-up_fhpumy.svg");
+}
+#cerrar-nav-mobile {
+    align-self: end;
+    width: 26px;
+    height: 26px;
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099887/FrontendMentor/NavegacionDesplegable-FM/icon-close-menu_cmiwpk.svg");
+    background-repeat: no-repeat;
+}
+#nav-mobile button {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid var(--medium-gray);
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--medium-gray);
+}
+#nav-mobile button:active {
+    border-color: var(--almost-black);
+    color: var(--almost-black);
 }
 
 /* MAIN */
@@ -86,7 +154,7 @@ section img {
     background-color: var(--almost-black);
     border-radius: 10px;
     border: 2px solid var(--almost-black); 
-    transition: color 500ms ease-in-out;
+    transition: color 500ms ease-out;
     transition: background 500ms ease-out;
 }
 .informacion button:hover {
