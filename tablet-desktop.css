@@ -42,6 +42,7 @@ header nav {
     justify-content: space-around;
 }
 .nav-izquierdo li {
+    position: relative;
     margin-left: 5px;
 }
 .nav-derecho {
@@ -61,19 +62,16 @@ header nav {
     border: 2px solid var(--almost-black);
     cursor: pointer;
 }
-.nav-izquierdo li:nth-child(1):hover #nav-desktop-caracteristicas{
-    display: inline-block;
-}
 #nav-desktop-caracteristicas {
     position: absolute;
-    top: 63px;
-    left: 150px;
+    top: 30px;
+    left: -10px;
     z-index: 2;
     width: 150px;
     height: auto;
     border-radius: 10px;
-    background-color: var(--white);
-    box-shadow: 0 0 10px var(--almost-black);
+    background-color: var(--almost-white);
+    box-shadow: 0 0 10px 1px var(--almost-black);
 }
 #nav-desktop-caracteristicas li {
     margin: 10px;
@@ -96,7 +94,20 @@ header nav {
 #nav-desktop-caracteristicas li:nth-child(4) span {
     background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099889/FrontendMentor/NavegacionDesplegable-FM/icon-planning_exltb2.svg");
 }
-
+#nav-desktop-empresa {
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    z-index: 2;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--almost-white);
+    box-shadow: 0 0 10px 1px var(--almost-black);
+}
+#nav-desktop-empresa li {
+    margin: 10px;
+}
 
 /* MAIN */
 section {

@@ -96,13 +96,34 @@ header nav ul:nth-child(1) {
 #nav-mobile li span {
     display: inline-block;
     width: 10px;
-    height: 10px;
+    height: 6px;
     margin-left: 5px;
     background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099887/FrontendMentor/NavegacionDesplegable-FM/icon-arrow-down_nxnegu.svg");
     background-repeat: no-repeat;
 }
 #nav-mobile li:active span {
     background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099887/FrontendMentor/NavegacionDesplegable-FM/icon-arrow-up_fhpumy.svg");
+}
+#nav-mobile #nav-mobile-caracteristicas li {
+    margin: 20px 20px 0 20px;
+}
+#nav-mobile #nav-mobile-caracteristicas span {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+}
+#nav-mobile-caracteristicas li:nth-child(1) span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099889/FrontendMentor/NavegacionDesplegable-FM/icon-todo_rt3d2q.svg");
+}
+#nav-mobile-caracteristicas li:nth-child(2) span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099887/FrontendMentor/NavegacionDesplegable-FM/icon-calendar_izcgi4.svg");
+}
+#nav-mobile-caracteristicas li:nth-child(3) span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099889/FrontendMentor/NavegacionDesplegable-FM/icon-reminders_jaxqbl.svg")
+}
+#nav-mobile-caracteristicas li:nth-child(4) span {
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1667099889/FrontendMentor/NavegacionDesplegable-FM/icon-planning_exltb2.svg");
 }
 #cerrar-nav-mobile {
     align-self: end;
