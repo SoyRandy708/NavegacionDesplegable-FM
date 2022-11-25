@@ -17,9 +17,10 @@ body {
     display: flex;
     flex-direction: column; 
     margin: 0 auto;
-    font-size: 1.4rem;
-    max-width: 508px;
+    max-width: 500px;
     min-height: 100vh;
+    background-color: var(--almost-white);
+    font-size: 1.4rem;
 }
 button {
     font-family:  'Epilogue', sans-serif;
@@ -59,28 +60,16 @@ header nav ul:nth-child(1) {
 #nav-mobile {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 100%;
     width: 65%;
     max-width: 300px;
     height: 100vh;
     background-color: var(--almost-white);
-    animation: desplazamiento 500ms ease-out ;
+    transition-property: transform;
+    transition-duration: 1s;
 }
-@keyframes desplazamiento {
-    0% {
-        transform: translateX(100%)
-    }
-    100% {
-        transform: translateX(0)
-    }
-}
-@keyframes desplazamientoCerrar {
-    0% {
-        transform: translateX(0)
-    }
-    100% {
-        transform: translateX(100%)
-    }
+.mostrar-nav-mobile {
+    transform: translateX(-100%);
 }
 #nav-mobile div {
     display: flex;
@@ -175,11 +164,17 @@ section img {
     background-color: var(--almost-black);
     border-radius: 10px;
     border: 2px solid var(--almost-black); 
-    transition: color 500ms ease-out;
-    transition: background 500ms ease-out;
+    transition-property: color, background-color;
+    transition-duration: 500ms;
 }
-.informacion button:hover {
-    cursor: pointer;
+@media (hover: hover) {
+    .informacion button:hover {
+        cursor: pointer;
+        color: var(--almost-black);
+        background-color: var(--almost-white);
+    }
+}
+.informacion button:active {
     color: var(--almost-black);
     background: var(--almost-white);
 }
